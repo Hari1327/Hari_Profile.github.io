@@ -49,9 +49,12 @@ function sendEmail() {
         To : 'nuhari27081999@gmail.com',
         From : "nuhari27081999@gmail.com",
         Subject : "This is the subject",
-        Body : "And this is the body"
+        Body : "Name: " + document.getElementById("name").value
+            +"<br> Email: " + document.getElementById("email").value
+            +"<br> Contact: " + document.getElementById("phone") .value
+            +"<br> Message " + document.getElementById("message").value
     }).then(
-      message => alert(message)
+      message => alert("Message sent successfully")
     );
 }
 
