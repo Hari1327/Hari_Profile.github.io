@@ -68,3 +68,10 @@ function myFunction() {
     var element = document.body;
     element.classList.toggle("dark-mode");
  }
+
+ document.getElementById('WA__icon').addEventListener('click', function() {
+    document.getElementById('popup').style.display = 'flex';
+});
+document.getElementById('popup').addEventListener('click', function() {
+    document.getElementById('popup').style.display = 'none';
+  });
